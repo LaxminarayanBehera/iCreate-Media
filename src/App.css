@@ -1,0 +1,80 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none !important;
+}
+
+body,
+main {
+  overflow: auto;
+  scrollbar-width: none !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 72rem) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.typewriter-cursor {
+  color: #b8d432 !important;
+}
+
+/* Custom Swiper Pagination Styles */
+.custom-pagination-outside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.custom-pagination-outside .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease-in-out !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-pagination-outside .swiper-pagination-bullet-active {
+  background-color: #eeececbb !important;
+  transform: scale(1.2) !important;
+}
+
+/* Fallback styles for any default pagination */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0c3227;
+  transform: scale(1.2);
+}
