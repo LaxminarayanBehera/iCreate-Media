@@ -183,6 +183,7 @@ const Subscription = () => {
               );
             })}
           </motion.div>
+          {/* changes */}
         </div>
       </XSpacing>
     </div>
