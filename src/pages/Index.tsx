@@ -7,6 +7,7 @@ import ShowCounter from "../components/ShowCounter";
 import VideoPart from "../components/VideoPart";
 import About from "../components/About";
 import ClientReview from "../components/ClientReview";
+import Subscription from "../components/subscription/Subscription";
 
 
 
@@ -19,6 +20,7 @@ const Index = () => {
             <CheckScore />
             <OurOffer />
             <VideoPart />
+            <Subscription />
             <Client />
             <ShowCounter />
             <About />

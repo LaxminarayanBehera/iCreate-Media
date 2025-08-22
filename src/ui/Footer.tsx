@@ -179,7 +179,7 @@ const Footer = () => {
                 </h4>
 
                 <div className="space-y-3 mb-2">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 justify-start">
                     <img
                       src={upwork}
                       alt="Upwork"

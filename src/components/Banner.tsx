@@ -21,7 +21,7 @@ const Banner = () => {
                 pagination={{ clickable: true }}
                 loop={true}
                 effect="fade"
-                className="w-full h-screen"
+                className="w-full h-screen cursor-pointer"
             >
                 {/* Slide 1 */}
 

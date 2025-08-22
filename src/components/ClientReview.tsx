@@ -49,35 +49,35 @@ const ClientReview = () => {
     ];
 
     return (
-        <div className="w-full bg-icm-yellow py-16">
+        <div className="w-full bg-icm-yellow py-6  md:py-16">
             <XSpacing>
-                <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center py-4">
+                <div className="flex flex-col md:flex-row gap-18 md:gap-12 items-center py-4">
                     {/* Left side */}
                     <div className="space-y-6 text-center md:text-left md:w-2/5">
-                        <h1 className="text-5xl font-normal text-icm-black leading-snug">
+                        <h1 className="text-4xl lg:text-5xl font-normal text-icm-black leading-snug">
                             Happy Clients <br /> About Us
                         </h1>
                         <div className="w-16 h-0.5 bg-icm-white mx-auto md:mx-0" />
-                        <p className="text-2xl text-white">Words of Appreciation</p>
+                        <p className="text-xl lg:text-2xl text-white">Words of Appreciation</p>
                         <div className="flex w-full justify-center md:justify-start items-start">
                             <ClientSignature />
                         </div>
                     </div>
 
                     {/* Right side */}
-                    <div className="flex flex-col items-center justify-center">
-                        <div className="relative bg-icm-black/90 text-white p-8 rounded-bl-[90px] rounded-tr-[90px] max-w-3xl h-[340px] w-full">
-                            <div className="absolute -top-12 -left-12">
+                    <div className="flex flex-col items-center justify-center ">
+                        <div className="relative bg-icm-black/90 text-white p-8 rounded-bl-[90px] rounded-tr-[90px] max-w-sm sm:max-w-xl lg:max-w-3xl sm:h-[400px] lg:h-[340px] w-full">
+                            <div className="absolute  -top-12 left-28  md:-top-12 md:-left-12">
                                 <div className="relative">
                                     <img
                                         src={avatarBg}
                                         alt="avatar bubble"
-                                        className="w-fit h-fit object-contain"
+                                        className=" w-24 h-24 md:w-fit  md:h-fit object-contain"
                                     />
                                     <img
                                         src={avatar1}
                                         alt="avatar1"
-                                        className="absolute top-6 left-8"
+                                        className="absolute h-12 w-12 md:w-fit md:h-fit top-6 left-6  md:top-6 md:left-8"
                                     />
                                 </div>
                             </div>
@@ -97,10 +97,10 @@ const ClientReview = () => {
                                 {reviews.map((review) => (
                                     <SwiperSlide key={review.id}>
                                         <div className="flex flex-col">
-                                            <p className="px-14 text-xl py-7 leading-relaxed">
+                                            <p className="md:px-14 px-8 text-sm md:text-xl py-7 leading-relaxed">
                                                 {review.text}
                                             </p>
-                                            <div className="px-14">
+                                            <div className="md:px-14 px-8">
                                                 <h3 className="text-icm-yellow font-semibold">
                                                     {review.name}
                                                 </h3>
@@ -117,7 +117,7 @@ const ClientReview = () => {
                                 <img
                                     src={quote}
                                     alt="quote"
-                                    className="h-28 w-28 object-contain absolute bottom-14 right-14 invert-0"
+                                    className="hidden lg:flex h-28 w-28 object-contain absolute bottom-14 right-14 invert-0"
                                 />
                             </div>
                         </div>
